@@ -1,29 +1,30 @@
 package futbol;
+
 public abstract class Futbolista implements Comparable {
     private String nombre;
     private int edad;
     final private String posicion;
 
-    public Futbolista(){
+    public Futbolista() {
         this.nombre = "Maradona";
         this.edad = 30;
         this.posicion = "delantero";
     }
 
-    public Futbolista(String nombre, int edad, String posicion){
+    public Futbolista(String nombre, int edad, String posicion) {
         this.nombre = nombre;
         this.edad = edad;
         this.posicion = posicion;
     }
 
-    public String toString(){
+    public String toString() {
         return String.format("El futbolista /s tiene /d y juega de  /s", this.nombre, this.edad, this.posicion);
     }
 
-    public boolean equals(Futbolista f){
-        if (this == f){
+    public boolean equals(Futbolista f) {
+        if (this == f) {
             return true;
-        } else{
+        } else {
             return false;
         }
     }
@@ -49,5 +50,5 @@ public abstract class Futbolista implements Comparable {
     public String getPosicion() {
         return posicion;
     }
-    
+
 }
