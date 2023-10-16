@@ -18,7 +18,7 @@ public abstract class Futbolista implements Comparable {
     }
 
     public String toString() {
-        return String.format("El futbolista /s tiene /d y juega de  /s", this.nombre, this.edad, this.posicion);
+        return String.format("El futbolista %s tiene %d, y juega de %s", this.nombre, this.edad, this.posicion);
     }
 
     public boolean equals(Futbolista f) {

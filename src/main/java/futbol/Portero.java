@@ -22,7 +22,7 @@ public class Portero extends Futbolista {
 
     public String toString() {
         return super.toString()
-                + String.format("con el dorsal /d. Le han marcado /d", this.dorsal, this.golesRecibidos);
+                + String.format(" con el dorsal %d. Le han marcado %d", this.dorsal, this.golesRecibidos);
     }
 
     public int compareTo(Portero portero) {

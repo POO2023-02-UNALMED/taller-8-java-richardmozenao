@@ -26,7 +26,7 @@ public class Jugador extends Futbolista {
 
     @Override
     public String toString() {
-        return super.toString() + String.format(" con el dorsal /d. Ha marcado /d", this.dorsal, this.golesMarcados);
+        return super.toString() + String.format(" con el dorsal %d. Ha marcado %d", this.dorsal, this.golesMarcados);
     }
 
     public boolean jugarConLasManos() {
